@@ -24,6 +24,7 @@ import { cardStore } from "../stores/cardStore";
 import {computed} from "vue";
 
 const { cards } = defineProps(['cards']);
+
 const allCards = computed(() => cardStore.getters.getAllCards);
 
 const showMore = (id) => {
